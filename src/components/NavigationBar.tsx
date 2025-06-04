@@ -6,7 +6,6 @@ const instrumentSans = Instrument_Sans();
 export default function Navigation() {
   return (
     <div className="px-4">
-      <img src={"/logo.svg"} alt="Hevasoft Logo" className="h-16 absolute top-2"/>
       <nav className={`${instrumentSans.className} bg-neutral-200 w-full pt-8`}>
         <ul className="flex justify-center gap-10">
           <li>
