@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Instrument_Sans, Alfa_Slab_One } from "next/font/google";
 
 const instrumentSans = Instrument_Sans();
@@ -21,7 +21,12 @@ export const metadata: Metadata = {
     "mobile apps",
     "technology services",
     "IT consulting",
-  ],
+  ]
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1
 };
 
 export default function Page() {
