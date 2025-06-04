@@ -42,17 +42,20 @@ export default function Page() {
           <p className={`${instrumentSans.className} text-2xl text-center`}>
             Technical solutions for businesses of all sizes. Leave it to us.
           </p>
-          <div className="flex flex-col justify-start mt-4">
+          <div className={`${instrumentSans.className} flex flex-col justify-start mt-4`}>
             <div className="mx-auto text-center bg-neutral-500 hover:bg-neutral-700 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4 select-none">
               GET IN TOUCH
             </div>
-            <span className="text-sm font-semibold mt-5">
+            <span className={`${instrumentSans.className} text-sm font-semibold mt-5`}>
               Let&apos;s have a chat. No expectations, no obligations.
             </span>
           </div>
           {/* We do websites, software, system integrations, web apps, automation, consulting, cloud, mobile apps*/}
         </div>
-        <div className={"flex flex-col w-full items-center gap-10 py-30 px-1"}>
+        <div
+          id="services"
+          className={"flex flex-col w-full items-center gap-10 py-30 px-1"}
+        >
           <span
             className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}
           >
@@ -61,7 +64,7 @@ export default function Page() {
           <div
             className={`${instrumentSans.className} w-full flex flex-col sm:flex-row sm:gap-15 justify-center text-xl leading-10`}
           >
-            <ul className="text-center">
+            <ul className={`text-center`}>
               <li>Websites</li>
               <li>Software</li>
               <li>System Integrations</li>
@@ -74,9 +77,41 @@ export default function Page() {
               <li>Mobile Apps</li>
             </ul>
           </div>
-          <span className="text-2xl font-semibold">
-            Anything else? Just ask!
+          <span className={`${instrumentSans.className} text-2xl font-semibold`}>
+            Not on the list? Just ask!
           </span>
+        </div>
+        <div
+          id="about-us"
+          className={
+            "flex flex-col w-full items-center gap-10 py-30 px-1 sm:px-20"
+          }
+        >
+          <div className="flex flex-col max-w-3xl gap-10 items-center">
+            <span
+              className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}
+            >
+              Who we are
+            </span>
+            <p className={`${instrumentSans.className} text-xl text-center`}>
+              New on the scene, but with a wealth of experience. We are a team
+              of passionate professionals dedicated to delivering top-notch
+              technical solutions. Our mission is to empower businesses of all
+              sizes with innovative software, seamless integrations, and
+              exceptional support.
+            </p>
+            <p className={`${instrumentSans.className} text-xl text-center`}>
+              Based out of Werribee VIC, we serve clients across Australia and
+              beyond. Our team is committed to understanding your unique needs
+              and providing tailored solutions that drive success.
+            </p>
+            <p className={`${instrumentSans.className} text-xl text-center`}>
+              Whether you&apos;re a small business looking for your first
+              website or a large enterprise dealing with complex system
+              integrations, we&apos;re here to help you achieve your goals.
+            </p>
+            <span className={`${instrumentSans.className} text-2xl font-semibold`}>Just leave it to us.</span>
+          </div>
         </div>
         <div
           id="contact-us"
@@ -88,6 +123,12 @@ export default function Page() {
             Let&apos;s do big things
           </span>
           <ContactForm />
+        </div>
+        <div className="bg-neutral-700 text-neutral-200 pb-5 px-10">
+          <div className={`${instrumentSans.className} flex flex-row justify-between max-w-md mx-auto`}>
+            <span>Hevasoft 2025 ❤️</span>
+            <span>ABN 278 9969 5961</span>
+          </div>
         </div>
       </div>
     </>

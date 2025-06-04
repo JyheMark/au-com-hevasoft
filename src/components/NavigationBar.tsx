@@ -10,7 +10,7 @@ export default function Navigation() {
         <ul className="flex justify-center gap-10">
           <li>
             <a
-              href="#"
+              href="#services"
               className=" hover:text-neutral-900 hover:cursor-pointer font-bold text-lg"
             >
               SERVICES
@@ -18,18 +18,18 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href="#"
+              href="#about-us"
               className="hover:text-neutral-900 hover:cursor-pointer font-bold text-lg"
             >
-              PRICING
+              ABOUT US
             </a>
           </li>
           <li>
             <a
-              href="#"
+              href="#contact-us"
               className="hover:text-neutral-900 hover:cursor-pointer font-bold text-lg"
             >
-              FAQ
+              CONTACT
             </a>
           </li>
         </ul>

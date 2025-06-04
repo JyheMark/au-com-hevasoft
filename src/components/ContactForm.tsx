@@ -55,7 +55,7 @@ export default function Contact() {
           type="submit"
           className="mx-auto text-center bg-neutral-500 hover:bg-neutral-600 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4"
         >
-          Submit Form
+          SEND
         </button>
       </form>
       <span>{result}</span>
