@@ -2,8 +2,8 @@ import ContactForm from "@/components/ContactForm";
 import { Metadata, Viewport } from "next";
 import { Instrument_Sans, Alfa_Slab_One } from "next/font/google";
 
-const instrumentSans = Instrument_Sans();
-const alfaSlabOne = Alfa_Slab_One({ weight: "400" });
+const instrumentSans = Instrument_Sans({ subsets: ["latin"] });
+const alfaSlabOne = Alfa_Slab_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Hevasoft",
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     "mobile apps",
     "technology services",
     "IT consulting",
-  ]
+  ],
 };
 
 export const viewport: Viewport = {
   width: "device-width",
-  initialScale: 1
+  initialScale: 1,
 };
 
 export default function Page() {
@@ -34,12 +34,12 @@ export default function Page() {
     <>
       <div className="flex flex-col w-full mt-15">
         <div className={"flex flex-col w-full items-center gap-12 pb-30 px-1"}>
-          <h1 className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}>
+          <h1
+            className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}
+          >
             Elevate your business
           </h1>
-          <p
-            className={`${instrumentSans.className} text-2xl text-center`}
-          >
+          <p className={`${instrumentSans.className} text-2xl text-center`}>
             Technical solutions for businesses of all sizes. Leave it to us.
           </p>
           <div className="flex flex-col justify-start mt-4">
@@ -74,9 +74,14 @@ export default function Page() {
               <li>Mobile Apps</li>
             </ul>
           </div>
-          <span className="text-2xl font-semibold">Anything else? Just ask!</span>
+          <span className="text-2xl font-semibold">
+            Anything else? Just ask!
+          </span>
         </div>
-        <div id="contact-us" className="flex flex-col items-center bg-neutral-700 text-neutral-200 py-30 px-1">
+        <div
+          id="contact-us"
+          className="flex flex-col items-center bg-neutral-700 text-neutral-200 py-30 px-1"
+        >
           <span
             className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}
           >
