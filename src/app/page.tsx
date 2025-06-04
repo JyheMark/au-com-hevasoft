@@ -43,9 +43,9 @@ export default function Page() {
             Technical solutions for businesses of all sizes. Leave it to us.
           </p>
           <div className={`${instrumentSans.className} flex flex-col justify-start mt-4`}>
-            <div className="mx-auto text-center bg-neutral-500 hover:bg-neutral-700 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4 select-none">
+            <a href="#contact-us" className="mx-auto text-center bg-neutral-500 hover:bg-neutral-700 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4 select-none">
               GET IN TOUCH
-            </div>
+            </a>
             <span className={`${instrumentSans.className} text-sm font-semibold mt-5`}>
               Let&apos;s have a chat. No expectations, no obligations.
             </span>
