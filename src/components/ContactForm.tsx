@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col items-center gap-5">
-      <form onSubmit={onSubmit} className="flex flex-col items-center gap-6 mt-15">
+      <form onSubmit={onSubmit} className="flex flex-col items-center gap-6">
         <input
           type="text"
           name="name"

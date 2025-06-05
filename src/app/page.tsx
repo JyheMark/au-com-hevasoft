@@ -39,18 +39,29 @@ export default function Page() {
           >
             Elevate your business
           </h1>
+          <img
+            src={"/img/stepping-up.svg"}
+            alt="hero"
+            className="w-full max-w-xl"
+          />
           <p className={`${instrumentSans.className} text-2xl text-center`}>
             Technical solutions for businesses of all sizes. Leave it to us.
           </p>
-          <div className={`${instrumentSans.className} flex flex-col justify-start mt-4`}>
-            <a href="#contact-us" className="mx-auto text-center bg-neutral-500 hover:bg-neutral-700 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4 select-none">
+          <div
+            className={`${instrumentSans.className} flex flex-col justify-start`}
+          >
+            <a
+              href="#contact-us"
+              className="mx-auto text-center bg-neutral-500 hover:bg-neutral-700 hover:cursor-pointer transition text-neutral-200 font-semibold rounded-full px-12 py-4 select-none"
+            >
               GET IN TOUCH
             </a>
-            <span className={`${instrumentSans.className} text-sm font-semibold mt-5`}>
+            <span
+              className={`${instrumentSans.className} text-sm font-semibold mt-5`}
+            >
               Let&apos;s have a chat. No expectations, no obligations.
             </span>
           </div>
-          {/* We do websites, software, system integrations, web apps, automation, consulting, cloud, mobile apps*/}
         </div>
         <div
           id="services"
@@ -77,7 +88,9 @@ export default function Page() {
               <li>Mobile Apps</li>
             </ul>
           </div>
-          <span className={`${instrumentSans.className} text-2xl font-semibold`}>
+          <span
+            className={`${instrumentSans.className} text-2xl font-semibold`}
+          >
             Not on the list? Just ask!
           </span>
         </div>
@@ -110,22 +123,33 @@ export default function Page() {
               website or a large enterprise dealing with complex system
               integrations, we&apos;re here to help you achieve your goals.
             </p>
-            <span className={`${instrumentSans.className} text-2xl font-semibold`}>Just leave it to us.</span>
+            <span
+              className={`${instrumentSans.className} text-2xl font-semibold`}
+            >
+              Just leave it to us.
+            </span>
           </div>
         </div>
         <div
           id="contact-us"
-          className="flex flex-col items-center bg-neutral-700 text-neutral-200 py-30 px-1"
+          className="flex flex-col items-center bg-neutral-700 text-neutral-200 py-30 px-1 gap-20"
         >
           <span
             className={`${alfaSlabOne.className} text-5xl sm:text-6xl text-center`}
           >
             Let&apos;s do big things
           </span>
+          <img
+            src={"/img/powerful.svg"}
+            alt="powerful"
+            className="w-full max-w-xl"
+          />
           <ContactForm />
         </div>
         <div className="bg-neutral-700 text-neutral-200 pb-5 px-10">
-          <div className={`${instrumentSans.className} flex flex-row justify-between max-w-md mx-auto`}>
+          <div
+            className={`${instrumentSans.className} flex flex-row justify-between max-w-md mx-auto`}
+          >
             <span>Hevasoft 2025 ❤️</span>
             <span>ABN 278 9969 5961</span>
           </div>
